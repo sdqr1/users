@@ -60,7 +60,7 @@ function registerUser(){
 
     let user = new User(email,password,first,last,age,address,phone,payment,color);
     // validate the user 
-    if (isValid(user)){
+    if(isValid(user)){
         saveUser(user);//this fn is in the storeManager.js
         console.log(user);
     } 
